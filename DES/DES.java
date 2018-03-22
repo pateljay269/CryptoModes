@@ -66,9 +66,9 @@ public class DES {
                 }
             }
 
-            int CD[][] = Const.half(K56);		//Divide Half C & D
+            int CD[][] = Const.half(K56);			//Divide Half C & D
             int IP[] = Const.permutation(PT, Const.IP);		//Initial Permutation Of Input Text
-            int LR[][] = Const.half(IP);		//Divide Half L-Left & R-Right
+            int LR[][] = Const.half(IP);			//Divide Half L-Left & R-Right
 
             for (int i = 0; i < 16; i++) {
                 if (!isEnc) {
@@ -78,13 +78,13 @@ public class DES {
                     CD = Const.leftShift(CD, Const.kShift[i]);		//Generate Key For Encryption
                 }
 
-                int kTrans[] = Const.merge(CD);					//Key Transformation
+                int kTrans[] = Const.merge(CD);				//Key Transformation
                 int KEY[] = Const.permutation(kTrans, Const.PC2);	//Pc-2 Table Permutation
 
-                LR = fFunc(LR, KEY);						//F-Function
+                LR = fFunc(LR, KEY);					//F-Function
             }
 
-            LR = Const.swap(LR);							//After Last Round Swapping Left & Right
+            LR = Const.swap(LR);					//After Last Round Swapping Left & Right
 
             int FP[] = Const.permutation(Const.merge(LR), Const.FP);	//Final Permutation
 
@@ -110,7 +110,7 @@ public class DES {
         int rXk[] = new int[48];
 
         for (int i = 0; i < expand.length; i++) {
-            rXk[i] = (expand[i] + k48[i]) % 2;				//XOR Of expand & Key
+            rXk[i] = (expand[i] + k48[i]) % 2;			//XOR Of expand & Key
         }
 
         //region S-Box
@@ -128,10 +128,10 @@ public class DES {
         }
         //endregion
 
-        ar32 = Const.permutation(ar32, Const.P);			//P Table Permutation
+        ar32 = Const.permutation(ar32, Const.P);		//P Table Permutation
 
         for (int l = 0; l < ar32.length; l++) {
-            ar32[l] = ar32[l] ^ left[l];					//XOR Of Left & F-function Output
+            ar32[l] = ar32[l] ^ left[l];			//XOR Of Left & F-function Output
         }
 
         int LRi[][] = new int[2][];
