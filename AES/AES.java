@@ -6,10 +6,8 @@
 
 public class AES {
 
-    private static Scanner in;
-
     public static void main(String[] args) {
-        in = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
 
         String input;
         char c;
