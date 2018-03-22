@@ -53,7 +53,7 @@ public class DES {
         for (int h = 0; h < input.length(); h += 8) {
             String s1;
             try {
-                s1 = input.substring(h, h + 8);				//8 bytes = 64 Bits
+                s1 = input.substring(h, h + 8);			//8 bytes = 64 Bits
             } catch (Exception e) {
                 s1 = input.substring(h, input.length());
             }
@@ -66,9 +66,9 @@ public class DES {
                 }
             }
 
-            int CD[][] = Const.half(K56);					//Divide Half C & D
+            int CD[][] = Const.half(K56);		//Divide Half C & D
             int IP[] = Const.permutation(PT, Const.IP);		//Initial Permutation Of Input Text
-            int LR[][] = Const.half(IP);					//Divide Half L-Left & R-Right
+            int LR[][] = Const.half(IP);		//Divide Half L-Left & R-Right
 
             for (int i = 0; i < 16; i++) {
                 if (!isEnc) {
