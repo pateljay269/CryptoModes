@@ -31,12 +31,12 @@ public class DES {
             }
 
             int K64[] = new int[64];
-            System.arraycopy(Const.lfsr(key), 0, K64, 0, 64);	//Copy First 64 Bit
+            System.arraycopy(Const.lfsr(key), 0, K64, 0, 64);		//Copy First 64 Bit
             int K56[] = Const.permutation(K64, Const.PC1);		//PC-1 Table Permutation
 
             boolean isEnc = true;
-            String c1 = encDec(input, K56, isEnc);				//For Encryption
-            String c2 = encDec(c1, K56, !isEnc);				//For Decryption
+            String c1 = encDec(input, K56, isEnc);		//For Encryption
+            String c2 = encDec(c1, K56, !isEnc);		//For Decryption
 
             System.out.println("OutPut:");
             System.out.println(c1);
