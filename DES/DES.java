@@ -128,10 +128,10 @@ public class DES {
         }
         //endregion
 
-        ar32 = Const.permutation(ar32, Const.P);		//P Table Permutation
+        ar32 = Const.permutation(ar32, Const.P);	//P Table Permutation
 
         for (int l = 0; l < ar32.length; l++) {
-            ar32[l] = ar32[l] ^ left[l];			//XOR Of Left & F-function Output
+            ar32[l] = ar32[l] ^ left[l];		//XOR Of Left & F-function Output
         }
 
         int LRi[][] = new int[2][];
