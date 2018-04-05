@@ -1,7 +1,3 @@
-> AES Encryption Algortihm..
-
-[AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)
-
 [AES Encryption Example](https://kavaliro.com/wp-content/uploads/2014/03/AES.pdf)
 
 [AES Full Example](http://www.adamberent.com/documents/AESbyExample.pdf)
