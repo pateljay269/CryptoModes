@@ -14,4 +14,10 @@
 
 ****
 
-[AES Details](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)
+[AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)
+
+[AES Encryption Example](https://kavaliro.com/wp-content/uploads/2014/03/AES.pdf)
+
+[AES Full Example](http://www.adamberent.com/documents/AESbyExample.pdf)
+
+[Example Must See](http://www.moserware.com/2009/09/stick-figure-guide-to-advanced.html)
