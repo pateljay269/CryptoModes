@@ -6,6 +6,10 @@
 
 ![alt text](https://i.stack.imgur.com/dMSNh.png "Key Part 2")
 
+![alt text](http://www.moserware.com/assets/stick-figure-guide-to-advanced/aes_act_3_scene_09_key_expansion_part_3_1100.png "Key Part 3")
+
+![alt text](http://www.moserware.com/assets/stick-figure-guide-to-advanced/aes_act_3_scene_12_shift_rows_576.png "Shift Rows")
+
 > AES Encryption Algortihm..
 
 ****
